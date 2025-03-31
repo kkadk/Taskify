@@ -1,0 +1,26 @@
+# Python cache
+*.pyc
+__pycache__/
+**/__pycache__/
+
+
+
+# Django media and static (locally generated)
+media/
+staticfiles/
+
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Environment
+.env
+vent/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+*.log
+
