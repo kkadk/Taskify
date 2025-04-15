@@ -1,14 +1,8 @@
 from rest_framework import serializers
 from taskm.models import Task
 from django.contrib.auth.models import User
-from django.utils.http import urlsafe_base64_encode
 from django.contrib.auth.models import Group
 from django.core.exceptions import ValidationError
-from django.utils.http import urlsafe_base64_encode
-from django.utils.encoding import force_bytes
-from django.contrib.auth.tokens import default_token_generator
-from django.core.mail import send_mail
-from django.conf import settings
 
 VALID_DOMAINS = {
     'admin.task.com': 'Admin',
