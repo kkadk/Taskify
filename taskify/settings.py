@@ -93,9 +93,9 @@ WSGI_APPLICATION = 'taskify.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'taskify',  
-        'USER': 'djangey', 
-        'PASSWORD': 'python6inch', 
+        'NAME': os.getenv('DB_NAME'),  
+        'USER': os.getenv('DB_USER'), 
+        'PASSWORD': os.getenv('DB_PASSWORD'), 
         'HOST': 'localhost',  
         'PORT': '5432',  
     }
