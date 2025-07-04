@@ -33,7 +33,9 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'your-default-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://taskify-tu9u.onrender.com',
+]
 
 
 # Application definition
